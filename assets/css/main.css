@@ -1478,3 +1478,192 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
+
+/* mio */
+.barras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+/* Estilos extra para los iconos de tecnologías */
+    .tech-icon-box {
+      text-align: center;
+      padding: 20px;
+      transition: all 0.3s ease-in-out;
+      background: var(--surface-color);
+      border-radius: 8px;
+      height: 100%; /* Para que tengan la misma altura */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .tech-icon-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255, 2, 231, 0.2); /* Tu color rosa */
+    }
+    .tech-icon-box i {
+      font-size: 48px;
+      margin-bottom: 15px;
+      display: block;
+    }
+    .tech-icon-box span {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--heading-color);
+    }
+    /* Separador visual para grupos de tecnologías */
+    .tech-category-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent-color);
+      margin-top: 30px;
+      margin-bottom: 15px;
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+/* --- PEGAR AL FINAL DE MAIN.CSS --- */
+
+/* Arreglo visualización Detalles del Proyecto */
+.portfolio-details-page main {
+  margin-top: 100px;
+}
+
+.portfolio-details-page .page-title {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.portfolio-details-page .page-title .heading {
+  display: none;
+}
+
+.portfolio-details-page .breadcrumbs {
+  background-color: var(--surface-color);
+  padding: 15px 0;
+  border-radius: 5px;
+}
+
+.portfolio-details-slider .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Efectos visuales Portfolio (Hover Neón) */
+.portfolio-content {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.portfolio-item:hover .portfolio-content {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 15px rgba(255, 2, 231, 0.4);
+}
+
+.portfolio-content .portfolio-info {
+  background: rgba(0, 0, 0, 0.85);
+  border-top: 2px solid var(--accent-color);
+}
+
+.portfolio-content .portfolio-info h4 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+
+/* --- ESTILOS PAGINA CONTACTO --- */
+
+/* Cabecera limpia sin fondo */
+.contact-page .page-title {
+  background: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.contact-page .page-title .heading {
+  display: none;
+}
+
+.contact-page .page-title nav {
+  background-color: var(--surface-color);
+  padding: 20px 0;
+  margin-top: 90px;
+}
+
+/* Etiqueta verde "Disponible" */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(39, 174, 96, 0.1);
+  color: #27ae60;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+}
+
+/* Punto verde con animación */
+.status-dot {
+  height: 10px;
+  width: 10px;
+  background-color: #27ae60;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(39, 174, 96, 0.7); }
+  70% { box-shadow: 0 0 0 6px rgba(39, 174, 96, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(39, 174, 96, 0); }
+}
+
+/* Animación cajas al pasar ratón */
+.info-item {
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+/* 1. Fondo y Texto de los inputs (Cajas de escribir) */
+.contact .php-email-form input, 
+.contact .php-email-form textarea {
+  background-color: rgba(255, 255, 255, 0.05) !important; /* Fondo oscuro translúcido */
+  color: #ffffff !important; /* TEXTO BLANCO PURO */
+  border: 1px solid rgba(255, 255, 255, 0.3) !important; /* Borde blanquecino sutil */
+}
+
+/* 2. Color del texto de ayuda ("Tu Nombre", "Mensaje"...) */
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important; /* Blanco un poco más suave */
+  opacity: 1;
+}
+
+/* 3. Cuando haces clic para escribir (Focus) */
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.1) !important; /* Se ilumina un poco el fondo */
+  border-color: var(--accent-color) !important; /* El borde se pone rosa */
+  color: #ffffff !important;
+  box-shadow: none;
+}
