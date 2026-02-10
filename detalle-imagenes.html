@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Detalle - Calendario de Adviento</title>
+  <title>Detalle - Galería de Imágenes</title>
+  <link href="assets/img/mario-icon.png" rel="icon">
   
-  <link href="assets/img/mario-icon.png" rel="icon"> <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -24,9 +19,7 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Mario Serrador</h1>
-      </a>
+      <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Mario Serrador</h1></a>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -40,14 +33,13 @@
   </header>
 
   <main class="main">
-
     <div class="page-title" data-aos="fade">
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li class="current">Calendario de Adviento</li>
+            <li class="current">Galería de Imágenes</li>
           </ol>
         </div>
       </nav>
@@ -60,17 +52,11 @@
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
               <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": { "delay": 5000 },
-                  "slidesPerView": "auto",
-                  "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true }
-                }
+                { "loop": true, "speed": 600, "autoplay": { "delay": 5000 }, "slidesPerView": "auto", "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true } }
               </script>
               <div class="swiper-wrapper align-items-center">
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/calendario de adviento.png" alt="Calendario Adviento">
+                  <img src="assets/img/portfolio/imagenes.png" alt="Tratamiento de Imágenes">
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -81,28 +67,24 @@
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Ficha Técnica</h3>
               <ul>
-                <li><strong>Categoría</strong>: Front-End Web</li>
-                <li><strong>Tecnologías</strong>: HTML, CSS, JS, SVG</li>
+                <li><strong>Categoría</strong>: Multimedia / CSS</li>
+                <li><strong>Tecnologías</strong>: HTML5, CSS Filters, Media</li>
                 <li><strong>Fecha</strong>: 2026</li>
-                
                 <li class="mt-3">
-                    <a href="proyectos/calendario-adviento/index.html" target="_blank" class="btn btn-primary w-100" style="background-color: var(--accent-color); border:none;">
-                        <i class="bi bi-play-fill me-2"></i> Ver Proyecto
+                    <a href="proyectos/imagenes/index.html" target="_blank" class="btn btn-primary w-100" style="background-color: var(--accent-color); border:none;">
+                        <i class="bi bi-play-fill me-2"></i> Ver Galería
                     </a>
                 </li>
               </ul>
             </div>
             
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Calendario Interactivo</h2>
+              <h2>Tratamiento de Imágenes Web</h2>
               <p>
-                Este proyecto consiste en un calendario de adviento digital totalmente interactivo. 
+                Proyecto dedicado a la manipulación visual de imágenes directamente desde el navegador utilizando CSS.
               </p>
               <p>
-                <strong>Lo más destacado:</strong> Todas las ilustraciones vectoriales (SVG) que aparecen han sido <strong>diseñadas y creadas por mí desde cero</strong>, dotando al proyecto de una identidad visual única.
-              </p>
-              <p>
-                A nivel de código, se utiliza JavaScript para controlar la lógica de fechas (impidiendo abrir ventanas futuras) y CSS Grid para una maquetación responsive perfecta.
+                Se implementan diversas técnicas como <strong>filtros CSS</strong> (escala de grises, desenfoque, contraste), recortes con <code>object-fit</code> y transiciones suaves al pasar el ratón (hover effects). Es una demostración de cómo enriquecer el contenido visual de una web sin necesidad de editar las fotos previamente.
               </p>
             </div>
           </div>
@@ -110,18 +92,12 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
       <h3 class="sitename">Mario Serrador</h3>
-      <p>Desarrollador Web apasionado por crear experiencias digitales únicas.</p>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Mario Serrador</strong>
-        </div>
-      </div>
+      <div class="container"><div class="copyright"><span>Copyright</span> <strong class="px-1 sitename">Mario Serrador</strong></div></div>
     </div>
   </footer>
 
@@ -133,6 +109,5 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/js/main.js"></script>
-
 </body>
 </html>

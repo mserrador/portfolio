@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+h3 {
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+    margin: 40px 0 20px 0;
+    font-size: 24px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    min-width: 600px;
+}
+
+thead {
+    background-color: #0066cc;
+    color: black;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+td {
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #f8f9fa;
+}
+
+td.imagen {
+    width: 25%;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.comparativa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.comparativa span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 5px;
+}
+
+.comparativa img {
+    max-width: 100px;
+    height: auto;
+    border: 2px solid transparent;
+}
+
+.original {
+    border-color: #ffcccc;
+}
+
+.optimizada {
+    border-color: #99ff99;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    td img {
+        max-height: 80px;
+    }
+    
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

@@ -8,7 +8,7 @@
   <meta name="description" content="Portfolio de proyectos de Mario Serrador">
   <meta name="keywords" content="web, desarrollo, portfolio, proyectos, front-end, back-end">
 
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/mario-icon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -24,37 +24,17 @@
   <link href="assets/css/main.css" rel="stylesheet">
   
   <style>
-    /* Ajuste para que el título se parezca al de Resume (sin fondo) */
-    .page-title {
-      padding: 0;
-      margin-bottom: 30px;
-    }
-    .page-title nav {
-      background-color: var(--surface-color); /* Fondo oscuro suave */
-      padding: 20px 0;
-      margin-top: 90px; /* Espacio para que no lo tape el header fijo */
-    }
+    /* Ajustes específicos para Portfolio */
+    .page-title { padding: 0; margin-bottom: 30px; }
+    .page-title nav { background-color: var(--surface-color); padding: 20px 0; margin-top: 90px; }
     
-    /* Estilo para las tarjetas de "Aviso" (Back-End / Sistemas vacíos) */
     .portfolio-message {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px dashed var(--accent-color);
-      color: var(--default-color);
-      text-align: center;
-      padding: 40px;
-      height: 100%;
-      min-height: 250px;
-      border-radius: 10px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      background: rgba(255, 255, 255, 0.05); border: 1px dashed var(--accent-color);
+      color: var(--default-color); text-align: center; padding: 40px;
+      height: 100%; min-height: 250px; border-radius: 10px;
     }
-    .portfolio-message i {
-      font-size: 40px;
-      margin-bottom: 15px;
-      color: var(--accent-color);
-    }
+    .portfolio-message i { font-size: 40px; margin-bottom: 15px; color: var(--accent-color); }
   </style>
 </head>
 
@@ -62,11 +42,9 @@
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="sitename">Mario Serrador</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -76,7 +54,6 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -91,10 +68,10 @@
           </ol>
         </div>
       </nav>
-    </div><section id="portfolio" class="portfolio section">
+    </div>
 
+    <section id="portfolio" class="portfolio section">
       <div class="container">
-
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
@@ -102,7 +79,9 @@
             <li data-filter=".filter-front">Front-End</li>
             <li data-filter=".filter-back">Back-End</li>
             <li data-filter=".filter-smr">Sistemas</li>
-          </ul><div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-front">
               <div class="portfolio-content h-100">
@@ -111,7 +90,7 @@
                   <h4>Calendario de Adviento</h4>
                   <p>Front-End: HTML, CSS y JS</p>
                   <a href="assets/img/portfolio/calendario de adviento.png" title="Calendario de Adviento" data-gallery="portfolio-gallery-front" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="proyectos/calendario-adviento/index.html" title="Ver Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="detalle-calendario.html" title="Ver Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
@@ -123,7 +102,7 @@
                   <h4>Animación Barquito</h4>
                   <p>Front-End: CSS Animations</p>
                   <a href="assets/img/portfolio/animacion barquito.png" title="Animación Barquito" data-gallery="portfolio-gallery-front" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="proyectos/animacion-barco/tarea/index.html" title="Ver Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="detalle-barco.html" title="Ver Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
@@ -135,22 +114,22 @@
                   <h4>Página de Producto</h4>
                   <p>Front-End: Diseño Responsive</p>
                   <a href="assets/img/portfolio/pagina de producto.png" title="Página de Producto" data-gallery="portfolio-gallery-front" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="proyectos/pagina-producto/index.html" title="Ver Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="detalle-producto.html" title="Ver Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-front">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/pagina de producto.png" class="img-fluid" style="opacity: 0.5; filter: grayscale(100%);" alt="En construcción">
+                <img src="assets/img/portfolio/imagenes.png" class="img-fluid" alt="Proyecto Imagenes">
                 <div class="portfolio-info">
-                  <h4>Proyecto 4</h4>
-                  <p>En desarrollo (Próximamente)</p>
-                  <a href="#" title="En desarrollo" class="details-link"><i class="bi bi-cone-striped"></i></a>
+                  <h4>Proyecto Imagenes</h4>
+                  <p>Front-End: Tratamientos de imagenes</p>
+                  <a href="assets/img/portfolio/imagenes.png" title="Proyecto Imagenes" data-gallery="portfolio-gallery-front" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="detalle-imagenes.html" title="Ver Detalles" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div>
-
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-back">
               <div class="portfolio-message">
@@ -170,11 +149,12 @@
               </div>
             </div>
 
-          </div></div>
-
+          </div>
+        </div>
       </div>
+    </section>
 
-    </section></main>
+  </main>
 
   <footer id="footer" class="footer dark-background">
     <div class="container">
@@ -188,15 +168,12 @@
         <div class="copyright">
           <span>Copyright</span> <strong class="px-1 sitename">Mario Serrador</strong> <span>Todos los derechos reservados</span>
         </div>
-        <div class="credits">
-          Designed by <a href="">Mario Serrador</a>
-        </div>
+        <div class="credits">Designed by <a href="">Mario Serrador</a></div>
       </div>
     </div>
   </footer>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
   <div id="preloader"></div>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -209,9 +186,7 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>

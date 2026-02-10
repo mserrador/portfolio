@@ -1667,3 +1667,29 @@ section,
   color: #ffffff !important;
   box-shadow: none;
 }
+
+.portfolio-content img {
+  width: 100%;       
+  height: 250px;     
+  object-fit: cover;
+  object-position: center; 
+}
+
+.isotope-item {
+  position: static !important; 
+  transform: none !important;  
+  margin-bottom: 30px;        
+}
+
+
+.isotope-container {
+  height: auto !important; 
+  overflow: visible !important;
+}
+
+
+.portfolio-content img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover;
+}
